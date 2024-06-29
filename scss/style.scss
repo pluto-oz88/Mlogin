@@ -1,3 +1,780 @@
 @import url("../css/initialize.css");
 @import "colors";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;0,800;0,900;1,100;1,600&display=swap");
+
+//DIMENSIONS
+$max-width: 390px;
+$min-width: 320px;
+$br4: 4px; //Border radius
+$bs1: 12px 12px 20px $color17; //Border shadow
+
+.colorB {
+  background-color: $colorB;
+  color: $color18;
+  &:hover {
+    background-color: $color17;
+    color: $color18;
+  }
+}
+
+.color10 {
+  background-color: $color10;
+  color: $color18;
+  &:hover {
+    background-color: $color17;
+    color: $color18;
+  }
+}
+
+.color12 {
+  background-color: $color12;
+  color: $color18;
+  &:hover {
+    background-color: $color17;
+    color: $color18;
+  }
+}
+
+.color13 {
+  background-color: $color13;
+  color: $color18;
+  &:hover {
+    background-color: $color17;
+    color: $color18;
+  }
+}
+
+.color17 {
+  background-color: $color17;
+  color: $color18;
+  &:hover {
+    background-color: $color17;
+    color: $color18;
+  }
+}
+
+.color18 {
+  background-color: $color18;
+  color: $colorB;
+  &:hover {
+    background-color: $color17;
+    color: $color18;
+  }
+}
+
+.color23 {
+  background-color: $color23;
+  color: $colorB;
+  &:hover {
+    background-color: $color17;
+    color: $color18;
+  }
+}
+
+.color25 {
+  background-color: $color25;
+  color: $colorB;
+  &:hover {
+    background-color: $color17;
+    color: $color18;
+  }
+}
+
+.color32 {
+  background-color: $color32;
+  color: $color18;
+  &:hover {
+    background-color: $color17;
+    color: $color18;
+  }
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.col2 {
+  width: 100%;
+  max-width: $max-width;
+  min-width: $min-width;
+  position: fixed;
+  left: $max-width + 16px;
+  background-color: $color13;
+  top: 0;
+  padding: 10px;
+  border-radius: $br4;
+  box-shadow: $bs1;
+  h4 {
+    text-align: center;
+  }
+}
+
+h1 {
+  //font-size: 1.9rem;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
+h5 {
+  margin: 0;
+}
+
+a {
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.fullPage {
+  //height: 900px;
+  position: relative;
+  overflow: hidden;
+}
+
+.logobox {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1;
+  gap: 5px;
+  color: $colorB;
+  width: 100%;
+  h1 {
+    margin: 0 0 0 0;
+    text-align: center;
+  }
+}
+
+#echobeach {
+  position: absolute;
+  width: 100%;
+  max-width: $max-width;
+  min-width: $min-width;
+  top: 0px;
+  right: 0px;
+  margin: 10px;
+  color: red;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  p {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 4px;
+  }
+}
+
+img.logo {
+  width: 100px;
+  height: auto;
+}
+
+#map {
+  position: fixed;
+  height: 100%;
+}
+
+#select {
+  text-align: center;
+  font-size: 14px;
+  color: $colorB;
+  margin-top: 2px;
+}
+
+input#origin-input.controls {
+  margin-bottom: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: $max-width;
+  min-width: $min-width;
+  margin: 0;
+  padding: 10px;
+  color: $color12;
+  background-color: $color23;
+  box-shadow: $bs1;
+  border-radius: $br4;
+  overflow: auto;
+  h1 {
+    text-align: center;
+  }
+}
+
+.tesla {
+  opacity: 0.05;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  height: auto;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  max-width: $max-width;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+  color: $colorA;
+  //background-image: url("../photos/Model_3_Tesla_F.png");
+  background-color: $color23;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 10px;
+  border-radius: $br4;
+  box-shadow: 0 2px 6px $color17;
+  filter: hue-rotate(0deg);
+  opacity: 1;
+}
+
+.controls {
+  max-width: $max-width;
+  margin-bottom: 10px;
+}
+
+.buttonBox2,
+.buttonBox3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px;
+  width: 100%;
+  justify-content: space-around;
+  margin: 10px 0 10px 0;
+}
+
+.buttonBox3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+button,
+a.button {
+  border-top: none;
+  border-left: 1px solid $color17;
+  border-bottom: 2px solid $color17;
+  border-right: 2px solid $color17;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 4px;
+  margin: 0 0 5px 0;
+  border-radius: $br4;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    color: $color18;
+    border-left: 1px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+  }
+  &:active {
+    top: 0.1em;
+    background-color: #e4f2e4;
+    color: #140202;
+    box-shadow: 0 5px #666;
+  }
+}
+
+#accept {
+  background-color: $color12;
+  color: $color13;
+  &:hover {
+    background-color: $color17;
+    color: $color18;
+  }
+}
+
+.inLine {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(110px, 25%) 1fr;
+  padding: 0;
+  margin: 0 0 3px 0;
+  gap: 5px;
+  border: 1px solid $color17;
+  color: $colorB;
+  padding: 2px 5px 2px 5px;
+  border-radius: $br4;
+}
+
+label {
+  align-self: center;
+  margin: 0 8px 0 0;
+  font-weight: 700;
+  width: 100%;
+  color: $colorB;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 2px 0;
+  padding: 6px;
+  border: 0;
+  border-radius: $br4;
+  outline: none;
+  background-color: $color25;
+  //background-color: red;
+  color: $color17;
+  font-weight: bold;
+}
+
+::placeholder {
+  text-align: center;
+  color: $color32;
+}
+
+#route-info {
+  position: absolute;
+  //bottom: 10px;
+  top: 2020px;
+  left: 0px;
+  background-color: $color13;
+  color: $colorB;
+  padding: 10px;
+  border-radius: $br4;
+  box-shadow: $bs1;
+  width: 100%;
+  max-width: $max-width;
+  overflow-x: auto;
+  opacity: 1;
+  transition: top 1.5s ease;
+}
+
+#route-info.show {
+  top: 0px !important;
+  //display: block;
+}
+
+#route-info table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+
+#route-info th,
+#route-info td {
+  text-align: left;
+  vertical-align: top;
+  text-transform: capitalize;
+  padding: 8px;
+  //
+}
+
+#route-info td.redLet::first-letter,
+#route-info td.redLet::first-letter {
+  border-radius: 50%;
+  padding: 0 4px;
+  background: $color32;
+  border: 2px solid $color32;
+  color: $color18;
+  text-align: center;
+}
+
+#route-info td.bLine {
+  border-bottom: 1px solid $color17;
+}
+
+#route-info th {
+  text-align: center;
+  background-color: $colorB;
+  color: $color13;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: $br4;
+}
+
+#stop1,
+#stop2 {
+  display: none;
+}
+
+#timingBox {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  background-color: $color23;
+  padding: 10px;
+  border-radius: $br4;
+  box-shadow: $bs1;
+  width: 100%;
+  max-width: $max-width;
+  overflow-x: auto;
+  opacity: 1;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  div.tbText {
+    position: absolute;
+    font-size: 40px;
+    color: $color4;
+    bottom: 100px;
+    text-align: center;
+  }
+}
+
+//RideDetails Form etc
+
+#timingDetails {
+  position: absolute;
+  left: 0px;
+  top: 2020px;
+  width: 100%;
+  max-width: $max-width;
+  background-color: $color13;
+  color: $colorB;
+  transition: top 1.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: $br4;
+  box-shadow: $bs1;
+}
+
+#timingDetails label {
+  width: 100%;
+  margin-left: 10px;
+}
+
+#timingDetails textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 2px solid $color25;
+  border-radius: $br4;
+  background-color: $color25;
+  color: $color17;
+  //font-size: 16px;
+  resize: none;
+}
+
+#timingDetails input#datePicker,
+#timingDetails input#timePicker {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid $color25;
+  border-radius: $br4;
+  background-color: $color18;
+  color: $colorB;
+  font-weight: bold;
+  //font-size: 16px;
+}
+
+#rideDetails {
+  font-weight: bold;
+}
+
+#summary {
+  position: absolute;
+  left: 0px;
+  top: 2020px;
+  //width: 900px;
+  transition: top 1.5s ease;
+  padding: 0px;
+}
+
+#myModal {
+  position: relative;
+  display: grid;
+  align-items: space-around;
+  justify-items: center;
+  width: 100%;
+  z-index: 1;
+  // background-image: url(../img/modalbg.png);
+  // background-size: 390px 390px;
+  // background-repeat: no-repeat;
+  border-radius: $br4;
+  margin: 0;
+}
+
+#myModal img {
+  width: 100%;
+  height: auto;
+}
+
+div#modalMessage {
+  position: absolute;
+  top: 20px;
+  padding: 0 10px;
+  color: white;
+  border-radius: $br4;
+}
+
+div#countdown {
+  //justify-self: center;
+  position: relative;
+  bottom: 140px;
+  font-size: 72px;
+  color: $color18;
+  text-align: center;
+}
+
+.mLine {
+  display: flex;
+  justify-content: space-around;
+  color: $colorB;
+}
+
+.pStatus {
+  display: flex;
+  overflow: auto;
+  //word-wrap: break-word;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#text1,
+#text2 {
+  font-size: 12px;
+  flex-flow: row nowrap;
+  place-items: space-around;
+  width: 100%;
+  margin: 0 0 0 5px;
+}
+
+#tableResult {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  max-width: 700px;
+}
+
+#tableResult td,
+#tableResult th {
+  border: 1px solid $color25;
+  padding: 8px;
+  vertical-align: top;
+}
+
+#tableResult tr {
+  background-color: $color23;
+}
+
+#tableResult tr:nth-child(even) {
+  background-color: $color10;
+}
+
+#tableResult tr:hover {
+  background-color: $color25;
+}
+
+#tableResult th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: $color12;
+  color: $color18;
+}
+
+.center {
+  text-align: center;
+  margin: 20px 0 4px 0;
+}
+
+h1.upper {
+  position: relative;
+  top: 20px;
+}
+
+h1.lower {
+  position: relative;
+  bottom: -5px;
+}
+
+.blurb {
+  width: 100%;
+  color: $colorB;
+}
+
+.motto {
+  display: grid;
+  justify-content: center;
+}
+
+.mottotext {
+  color: $color13;
+  background-color: $colorB;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: $br4;
+}
+
+.dbeddel {
+  border: 2px solid $color25;
+  border-radius: $br4;
+  &::before {
+    content: "\00a0 Adjust if required \00a0";
+    background-color: $color12;
+    color: $color18;
+    position: relative;
+    top: -10px;
+    left: 110px;
+    border-radius: 2px;
+  }
+}
+.dbeddel textarea {
+  width: 100%;
+  min-height: 60px;
+  font-weight: bold;
+  background-color: $color25;
+}
+
+.jrec {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3.jrec {
+  margin: 0 0 6px 0;
+  color: $colorB;
+}
+
+.record {
+  color: $colorB;
+  border-bottom: 2px solid $color25;
+}
+
+.rider {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+td.element {
+  background-color: $color18;
+}
+
+td.elementData {
+  background-color: $color18;
+  overflow-wrap: anywhere;
+}
+
+.cancelled,
+.completed,
+.paid {
+  position: absolute;
+  font-size: 48px;
+  top: 50px;
+  left: -20px;
+  color: $colorA;
+  letter-spacing: 6px;
+  transform: rotate(-70deg);
+  z-index: 2000;
+}
+
+.completed {
+  color: $color12;
+}
+
+.paid {
+  color: $color13;
+  background-color: $color17;
+  top: 500px;
+  left: 100px;
+  transform: rotate(0deg);
+}
+
+#errorMsg {
+  margin: 4px auto 0 auto;
+  background-color: $color32;
+  color: $color18;
+  font-weight: bold;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.spacer {
+  width: 100%;
+  height: 50px;
+}
+
+.password {
+  margin-top: 10px;
+  text-align: center;
+  color: $color32;
+  background-color: $color23;
+  border-radius: 4px;
+}
+
+hr {
+  //position: relative;
+  //top: 20px;
+  border: none;
+  height: 12px;
+  background: $color17;
+  //margin-bottom: 50px;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 1fr;
+  gap: 5px;
+  label[for="driver"] {
+    margin-left: 20px;
+  }
+  label[for="rider"] {
+    margin-left: 22px;
+  }
+}
+
+select[id="driver"],
+select[id="rider"] {
+  display: inline-block;
+  width: 100%;
+}
+
+input#currentd {
+  display: inline-block;
+}
+
+.oneline {
+  display: inline-block;
+  width: 70%;
+}
+
+.cbox {
+  display: inline-block;
+  width: 20%;
+}
+
+.notdead {
+  position: relative;
+  left: 200px;
+}
