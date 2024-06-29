@@ -35,15 +35,24 @@ require "db.php";
                     $stmt_update->bind_param("s", $token);
                     $stmt_update->execute();
                     // echo "Your email address has been verified. <a class="button" href='login.php'>Login</a>.";
-                    echo "Your email has been verified...";
+
+                    header("Location: ../index.php");
+                    $_SESSION["message"] = "Your email has been verified...";
+                    exit();
                 } else {
-                    echo "Your email is already verified...";
+                    header("Location: ../index.php");
+                    $_SESSION["message"] = "Your email is already verified...";
+                    exit();
                 }
             } else {
-                echo "Invalid token...";
+                header("Location: ../index.php");
+                $_SESSION["message"] = "Invalid token. Your email cannot be verified.";
+                exit();
             }
         } else {
-            echo "Token not found...";
+            header("Location: ../index.php");
+            $_SESSION["message"] = "Token not found. Your email cannot be verified.";
+            exit();
         }
         ?>
     </div>

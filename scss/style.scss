@@ -191,6 +191,8 @@ a {
 img.logo {
   width: 100px;
   height: auto;
+  height: 100px;
+  background: #666;
 }
 
 #map {
@@ -752,17 +754,18 @@ input#currentd {
   left: 200px;
 }
 
-.sessmess {
-  display: inline-block;
-  background-color: black;
-  color: white;
-  padding: 3px;
+p.sessmess {
+  display: none;
 }
-.sessmess1 {
-  display: inline-block;
+p.sessmess1 {
+  width: 100%;
+  display: block;
+  text-align: center;
   background-color: rgb(11, 241, 187);
+  border-radius: 2px;
   color: white;
   padding: 3px;
+  margin: 0;
 }
 
 .sessionv {

@@ -51,10 +51,14 @@ require "db.php";
                 $_SESSION["message"] = "Successfully logged in";
                 exit();
             } else {
-                echo "Email/Password not found. Try again";
+                header("Location: login.php");
+                $_SESSION["message"] = "Email/Password not found. Try again";
+                exit();
             }
         } else {
-            echo "Email/Password not found. Try again";
+            header("Location: login.php");
+            $_SESSION["message"] = "Email/Password not found. Try again";
+            exit();
         }
         ?>
 

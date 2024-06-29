@@ -1,12 +1,6 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated']) {
-    // Redirect to the login page if the user is not authenticated
-    header("Location: login.php");
-    exit();
-}
-
 $firstName = $_SESSION['user_fName'];
 $lastName = $_SESSION['user_lName'];
 
@@ -26,17 +20,6 @@ $lastName = $_SESSION['user_lName'];
 
 <body>
     <div class="container">
-        <div class="mLine">
-            <div>
-                <?php echo $firstName . " " . $lastName; ?>
-            </div>
-            <div>
-                <?php
-                //date_default_timezone_set("Australia/Brisbane");
-                //echo date_default_timezone_get();
-                echo date('d/m/Y') . " " . date("h:i a");
-                ?></div>
-        </div>
         <div class="logobox">
             <div><img class="logo" src="../img/GDrive_logo.png" alt="gdrive logo"></div>
             <div class="logotext">
@@ -58,6 +41,16 @@ $lastName = $_SESSION['user_lName'];
                 <button class="color12" type="submit">Delete Account</button>
                 <a class="button color32" href="../index.php">Back</a>
             </div>
+            <?php if (isset($_SESSION['message'])) { ?>
+                <div>
+                    <p class="sessmess1"><?php echo $_SESSION['message']; ?></p>
+                    <?php unset($_SESSION['message']); ?>
+                </div>
+            <?php } else { ?>
+                <div>
+                    <p class="sessmess">No Messages</p>
+                </div>
+            <?php } ?>
         </form>
     </div>
 </body>

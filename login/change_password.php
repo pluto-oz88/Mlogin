@@ -1,12 +1,6 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['user_authenticated']) || !$_SESSION['user_authenticated']) {
-    // Redirect to the login page if the user is not authenticated
-    header("Location: login.php");
-    exit();
-}
-
 $firstName = $_SESSION['user_fName'];
 $lastName = $_SESSION['user_lName'];
 
@@ -66,6 +60,16 @@ $lastName = $_SESSION['user_lName'];
                 <button class="button color12" type="submit">Change Password</button>
                 <a class="button color32" href="../index.php">Back</a>
             </div>
+            <?php if (isset($_SESSION['message'])) { ?>
+                <div>
+                    <p class="sessmess1"><?php echo $_SESSION['message']; ?></p>
+                    <?php unset($_SESSION['message']); ?>
+                </div>
+            <?php } else { ?>
+                <div>
+                    <p class="sessmess">No Messages</p>
+                </div>
+            <?php } ?>
         </form>
 
     </div>

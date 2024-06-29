@@ -55,11 +55,15 @@ require "db.php";
         $result_check_email = $stmt_check_email->get_result();
 
         if ($result_check_email->num_rows > 0) {
-            echo "This email address or mobile is already registered. Please use another email-mobile or login.";
+            header("Location: register.php");
+            $_SESSION["message"] = "This email address or mobile is already registered. Please use another email-mobile or login.";
+            exit();
         } else {
 
             if (!isValidPassword($password)) {
-                echo "Invalid password. 1 Upper case, 1 lower case, 1 number and 1 punctuation character required";
+                header("Location: register.php");
+                $_SESSION["message"] = "Invalid password. 1 Upper case, 1 lower case, 1 number and 1 punctuation character required";
+                exit();
             } else {
 
                 $sql_check_email = "SELECT * FROM users WHERE (email = ? or mobile= ?) and deleted = 1";
@@ -131,9 +135,11 @@ require "db.php";
                 require '../priv/t1.php';
                 echo "<br>" . $error1;
                 echo "<br>" . $error2;
-                echo "Verification Sent. Please check your email";
+                echo "";
 
-                echo "<h5 style='text-align:center;'>Confirmation Email Sent</h5>";
+                header("Location: ../index.php");
+                $_SESSION["message"] = "Verification Sent. Please check your email. <br>Status: Awaiting confirmation";
+                exit();
             }
         }
     }

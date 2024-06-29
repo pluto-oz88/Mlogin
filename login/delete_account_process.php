@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +15,6 @@
 <body>
     <div class="container">
         <?php
-        session_start();
 
         require "db.php";
 
@@ -36,11 +37,19 @@
                 $stmt_delete->execute();
 
                 echo "Account closed...";
+                header("Location: ../index.php");
+                session_unset();
+                $_SESSION["message"] = "Account deleted";
+                exit();
             } else {
-                echo "Wrong password. Try again...";
+                header("Location: delete_account.php");
+                $_SESSION["message"] = "Wrong password. Try again...";
+                exit();
             }
         } else {
-            echo "Email/Password not found. Try again...";
+            header("Location: delete_account.php");
+            $_SESSION["message"] = "Wrong password. Try again...";
+            exit();
         }
         ?>
 

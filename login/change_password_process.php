@@ -56,12 +56,18 @@ require "db.php";
                     $stmt_update->bind_param("ss", $new_password, $email);
                     $stmt_update->execute();
 
-                    echo "Password successfully changed...";
+                    header("Location: ../index.php");
+                    $_SESSION["message"] = "Password successfully changed...";
+                    exit();
                 } else {
-                    echo "Incorrect password. Try again...";
+                    header("Location: change_password.php");
+                    $_SESSION["message"] = "Incorrect password. Try again...";
+                    exit();
                 }
             } else {
-                echo "Email address not found. Try again...";
+                header("Location: change_password.php");
+                $_SESSION["message"] = "Email address not found. Try again...";
+                exit();
             }
         }
         ?>
