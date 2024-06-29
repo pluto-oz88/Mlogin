@@ -48,6 +48,7 @@ require "db.php";
                 $stmt_update->execute();
 
                 header("Location: ../index.php");
+                $_SESSION["message"] = "Successfully logged in";
                 exit();
             } else {
                 echo "Email/Password not found. Try again";
