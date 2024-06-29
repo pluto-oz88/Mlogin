@@ -569,33 +569,6 @@ input {
   padding: 0px;
 }
 
-#myModal {
-  position: relative;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: space-around;
-      -ms-flex-align: space-around;
-          align-items: space-around;
-  justify-items: center;
-  width: 100%;
-  z-index: 1;
-  border-radius: 4px;
-  margin: 0;
-}
-
-#myModal img {
-  width: 100%;
-  height: auto;
-}
-
-div#modalMessage {
-  position: absolute;
-  top: 20px;
-  padding: 0 10px;
-  color: white;
-  border-radius: 4px;
-}
-
 div#countdown {
   position: relative;
   bottom: 140px;

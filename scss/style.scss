@@ -507,33 +507,6 @@ input {
   padding: 0px;
 }
 
-#myModal {
-  position: relative;
-  display: grid;
-  align-items: space-around;
-  justify-items: center;
-  width: 100%;
-  z-index: 1;
-  // background-image: url(../img/modalbg.png);
-  // background-size: 390px 390px;
-  // background-repeat: no-repeat;
-  border-radius: $br4;
-  margin: 0;
-}
-
-#myModal img {
-  width: 100%;
-  height: auto;
-}
-
-div#modalMessage {
-  position: absolute;
-  top: 20px;
-  padding: 0 10px;
-  color: white;
-  border-radius: $br4;
-}
-
 div#countdown {
   //justify-self: center;
   position: relative;

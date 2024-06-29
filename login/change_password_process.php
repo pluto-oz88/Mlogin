@@ -13,7 +13,6 @@ require "db.php";
     <title>GDrive ChangePW</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/modal.js"></script>
 </head>
 
 <body>
@@ -38,9 +37,7 @@ require "db.php";
         }
 
         if (!isValidPassword($_POST['new_password'])) {
-            echo '<script>
-            messageModal("change_password.php", "Invalid password. 1 Upper case, 1 lower case, 1 number and 1 punctuation character required");
-            </script>';
+            echo "Invalid password. 1 Upper case, 1 lower case, 1 number and 1 punctuation character required";
         } else {
 
             $new_password = password_hash($_POST['new_password'], PASSWORD_DEFAULT);

@@ -21,7 +21,6 @@ $lastName = $_SESSION['user_lName'];
     <link rel="stylesheet" href="../../css/style.css">
     <title>GDrive ChangePW</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-    <script src="../js/modal.js"></script>
 </head>
 
 <body>

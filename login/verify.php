@@ -13,7 +13,6 @@ require "db.php";
     <title>GDrive Verify</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/modal.js"></script>
 </head>
 
 <body>
