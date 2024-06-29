@@ -135,7 +135,7 @@ require "db.php";
                 require '../priv/t1.php';
                 echo "<br>" . $error1;
                 echo "<br>" . $error2;
-                echo "";
+
 
                 header("Location: ../index.php");
                 $_SESSION["message"] = "Verification Sent. Please check your email. <br>Status: Awaiting confirmation";

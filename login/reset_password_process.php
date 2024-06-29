@@ -36,7 +36,10 @@ require "db.php";
         $new_password = trim($_POST['password']);
 
         if (!isValidPassword($new_password)) {
-            echo "Invalid password. 1 Upper case, 1 lower case, 1 number and 1 punctuation character required";
+
+            header("Location: reset_password.php");
+            $_SESSION["message"] = "Invalid password. 1 Upper case, 1 lower case, 1 number and 1 punctuation character required";
+            exit();
         } else {
 
             $new_password = password_hash($new_password, PASSWORD_DEFAULT);
@@ -63,12 +66,18 @@ require "db.php";
                     $stmt_delete->bind_param("s", $token);
                     $stmt_delete->execute();
 
-                    echo "Your password has been successfully reset.";
+                    header("Location: ../index.php");
+                    $_SESSION["message"] = "Your password has been successfully reset.";
+                    exit();
                 } else {
-                    echo "This password reset link has expired. Please request a new link.";
+                    header("Location: ../index.php");
+                    $_SESSION["message"] = "This password reset link has expired. Please request a new link.";
+                    exit();
                 }
             } else {
-                echo "Invalid password reset token.";
+                header("Location: ../index.php");
+                $_SESSION["message"] = "Invalid password reset token.";
+                exit();
             }
         }
         ?>

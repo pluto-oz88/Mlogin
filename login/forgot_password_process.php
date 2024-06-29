@@ -42,7 +42,7 @@ require "db.php";
             // Send password reset email
             $resetLink = "http://" . $_SERVER['SERVER_NAME'] . "/login/reset_password.php?token=" . $token;
             $subject = "Password Reset";
-            $message = "Please click the following link to reset your password: " . $resetLink;
+            $message = "If you requested a password reset, please click the following link to proceed: " . $resetLink . " If not please ignore (and delete) this link.";
 
             $sendTo1 = $email;
             $sendTo1n = '';
@@ -53,16 +53,15 @@ require "db.php";
             echo "<br>" . $error1;
             echo "<br>" . $error2;
 
-            if (!$error1 || !$error2) {
 
-                if (mail($email, $subject, $message, $headers)) {
-                    echo "A password reset link has been sent to your email address. Please check your inbox and click the link to reset your password.";
-                } else {
-                    echo "Error sending email. Please try again later.";
-                }
-            }
+            header("Location: ../index.php");
+            $_SESSION["message"] = "Reset verification sent. Awaiting confirmation.";
+            exit();
         } else {
-            echo "Email address not found. Try again...";
+
+            header("Location: forgot_password.php");
+            $_SESSION["message"] = "Unknown email address";
+            exit();
         }
         ?>
 

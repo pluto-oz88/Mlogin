@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,6 +39,16 @@
                 <button class="color10" type="submit">Reset Password</button>
                 <a class="button color32" href="../index.php">Home</a>
             </div>
+            <?php if (isset($_SESSION['message'])) { ?>
+                <div>
+                    <p class="sessmess1"><?php echo $_SESSION['message']; ?></p>
+                    <?php unset($_SESSION['message']); ?>
+                </div>
+            <?php } else { ?>
+                <div>
+                    <p class="sessmess">No Messages</p>
+                </div>
+            <?php } ?>
         </form>
 
     </div>
