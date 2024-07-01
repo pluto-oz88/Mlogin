@@ -1,0 +1,157 @@
+@charset "utf-8";
+:root {
+    //COLOURS CORP
+
+    --colorA: rgba(249, 238, 90, 1); //Original #968d00;
+    --colorB: rgba(20, 37, 99, 1); //Original #142563;
+
+    --color2: rgba(73, 71, 71, 1);
+    --color3: rgba(255, 255, 255, 1);
+
+    --color13: rgb(192, 153, 62);
+    --color17: rgba(0, 0, 0, 1);
+    --color18: rgba(255, 255, 255, 1);
+    --color20: rgb(100, 78, 91);
+    --color23: rgb(151, 170, 189);
+}
+
+:root {
+    --color1: #bddfdc; // - Represents the clear ocean waters.
+    --color2: #ff7f50; // - Adds a vibrant, tropical feel.
+    --color3: #f4a460; // - Mimics the beach sand.
+    --color4: rgba(255, 255, 255, 1); // - Clean and easy on the eyes.
+    --color5: #0f1010; // - Provides good contrast against lighter backgrounds.
+    --color6: rgb(233, 94, 1);
+    --color7: #9e90f0; // - Provides good contrast against lighter backgrounds.
+    --color8: #ffe2d9;
+    --color9: #fff4e1;
+    --color10: #fcf8f7;
+    --color11: rgb(136, 31, 41);
+    --color12: rgb(44, 86, 40, 1);
+    --colora: transparent;
+
+    --br4: 4px; //Border radius
+    --bs1: 12px 12px 20px var(--color17); //Border shadow
+}
+
+//Container styles
+$cont-bg-col: var(--color8);
+$cont-tx-col: var(--color5);
+$cont-br: var(--br4);
+$cont-bs1: var(--bs1);
+
+//Buttons
+.color1 {
+    background-color: var(--color1);
+    color: var(--color5);
+    &:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+    }
+}
+
+.color2 {
+    background-color: var(--color2);
+    color: var(--color5);
+    &:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+    }
+}
+
+.color3 {
+    background-color: var(--color3);
+    color: var(--color5);
+    &:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+    }
+}
+
+.color4 {
+    background-color: var(--color4);
+    color: var(--color5);
+    &:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+    }
+}
+
+.color5 {
+    background-color: var(--color6);
+    color: var(--color18);
+    &:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+    }
+}
+
+.color6 {
+    background-color: var(--color7);
+    color: var(--colorB);
+    &:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+    }
+}
+
+.color7 {
+    background-color: var(--color8);
+    color: var(--colorB);
+    &:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+    }
+}
+
+.color8 {
+    background-color: var(--color9);
+    color: var(--color5);
+    &:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+    }
+}
+
+.color9 {
+    background-color: var(--color10);
+    color: var(--color5);
+    &:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+    }
+}
+
+.color10 {
+    background-color: var(--color11);
+    color: var(--color4);
+    &:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+    }
+}
+
+.color11 {
+    background-color: var(--color12);
+    color: var(--color4);
+    &:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+    }
+}
+
+.color12 {
+    background-color: var(--color5);
+    color: var(--color4);
+    &:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+    }
+}
+
+//Forms
+
+$form-input-bg: var(--color10);
+$form-input-tx: var(--color5);
+$form-info-bg: var(--color1);
+$form-info-tx: var(--color5);
