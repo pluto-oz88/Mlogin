@@ -14,10 +14,10 @@
 <body>
     <div class="container">
         <div class="logobox">
-            <div><img class="logo" src="../img/GDrive_logo.png" alt="gdrive logo"></div>
+            <div><img class="logo" src="../img/tth-logo-nb.png" alt="gdrive logo"></div>
             <div class="logotext">
-                <h1 class="upper">Forgotten</h1>
-                <h1 class="lower">Password</h1>
+                <h2>TreeTopHeights</h2>
+                <h2>Reset Password</h2>
             </div>
         </div>
 

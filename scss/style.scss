@@ -3,89 +3,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;0,800;0,900;1,100;1,600&display=swap");
 
 //DIMENSIONS
-$max-width: 390px;
-$min-width: 320px;
-$br4: 4px; //Border radius
-$bs1: 12px 12px 20px $color17; //Border shadow
+
+:root {
+  --max-width: 390px;
+  --min-width: 320px;
+  --br4: 4px; //Border radius
+  --bs1: 12px 12px 20px var(--color17); //Border shadow
+}
 
 .colorB {
-  background-color: $colorB;
-  color: $color18;
+  background-color: var(--colorB);
+  color: var(--color18);
   &:hover {
-    background-color: $color17;
-    color: $color18;
+    background-color: var(--color17);
+    color: var(--color18);
   }
 }
 
 .color10 {
-  background-color: $color10;
-  color: $color18;
+  background-color: var(--color10);
+  color: var(--color18);
   &:hover {
-    background-color: $color17;
-    color: $color18;
+    background-color: var(--color17);
+    color: var(--color18);
   }
 }
 
-.color12 {
-  background-color: $color12;
-  color: $color18;
+.color5 {
+  background-color: var(--color5);
+  color: var(--color18);
   &:hover {
-    background-color: $color17;
-    color: $color18;
+    background-color: var(--color17);
+    color: var(--color18);
   }
 }
 
 .color13 {
-  background-color: $color13;
-  color: $color18;
+  background-color: var(--color13);
+  color: var(--color18);
   &:hover {
-    background-color: $color17;
-    color: $color18;
+    background-color: var(--color17);
+    color: var(--color18);
   }
 }
 
 .color17 {
-  background-color: $color17;
-  color: $color18;
+  background-color: var(--color17);
+  color: var(--color18);
   &:hover {
-    background-color: $color17;
-    color: $color18;
+    background-color: var(--color17);
+    color: var(--color18);
   }
 }
 
 .color18 {
-  background-color: $color18;
-  color: $colorB;
+  background-color: var(--color18);
+  color: var(--colorB);
   &:hover {
-    background-color: $color17;
-    color: $color18;
+    background-color: var(--color17);
+    color: var(--color18);
   }
 }
 
-.color23 {
-  background-color: $color23;
-  color: $colorB;
+.color53 {
+  background-color: var(--color53);
+  color: var(--colorB);
   &:hover {
-    background-color: $color17;
-    color: $color18;
+    background-color: var(--color17);
+    color: var(--color18);
   }
 }
 
-.color25 {
-  background-color: $color25;
-  color: $colorB;
+.color55 {
+  background-color: var(--color55);
+  color: var(--colorB);
   &:hover {
-    background-color: $color17;
-    color: $color18;
+    background-color: var(--color17);
+    color: var(--color18);
   }
 }
 
 .color32 {
-  background-color: $color32;
-  color: $color18;
+  background-color: var(--color32);
+  color: var(--color18);
   &:hover {
-    background-color: $color17;
-    color: $color18;
+    background-color: var(--color17);
+    color: var(--color18);
   }
 }
 
@@ -102,15 +105,15 @@ body {
 
 .col2 {
   width: 100%;
-  max-width: $max-width;
-  min-width: $min-width;
+  max-width: var(--max-width);
+  min-width: var(--min-width);
   position: fixed;
-  left: $max-width + 16px;
-  background-color: $color13;
+  left: var(--max-width) + 16px;
+  background-color: var(--color13);
   top: 0;
   padding: 10px;
-  border-radius: $br4;
-  box-shadow: $bs1;
+  border-radius: var(--br4);
+  box-shadow: var(--bs1);
   h4 {
     text-align: center;
   }
@@ -155,19 +158,45 @@ a {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1;
   gap: 5px;
-  color: $colorB;
+  color: var(--colorB);
   width: 100%;
-  h1 {
+  h2 {
     margin: 0 0 0 0;
     text-align: center;
   }
 }
 
+img.logo {
+  width: 100px;
+  height: auto;
+}
+
+.logotext {
+  h2:nth-of-type(1) {
+    margin-top: 10px;
+    font-size: 160%;
+    color: var(--color5);
+  }
+  h2:nth-of-type(2) {
+    font-size: 140%;
+    color: var(--color5);
+  }
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 2px solid #666;
+}
+p.user {
+  margin: 4px 0;
+}
 #echobeach {
   position: absolute;
   width: 100%;
-  max-width: $max-width;
-  min-width: $min-width;
+  max-width: var(--max-width);
+  min-width: var(--min-width);
   top: 0px;
   right: 0px;
   margin: 10px;
@@ -188,13 +217,6 @@ a {
   }
 }
 
-img.logo {
-  width: 100px;
-  height: auto;
-  height: 100px;
-  background: #666;
-}
-
 #map {
   position: fixed;
   height: 100%;
@@ -203,7 +225,7 @@ img.logo {
 #select {
   text-align: center;
   font-size: 14px;
-  color: $colorB;
+  color: var(--colorB);
   margin-top: 2px;
 }
 
@@ -213,14 +235,14 @@ input#origin-input.controls {
 
 .container {
   width: 100%;
-  max-width: $max-width;
-  min-width: $min-width;
+  max-width: var(--max-width);
+  min-width: var(--min-width);
   margin: 0;
   padding: 10px;
-  color: $color12;
-  background-color: $color23;
-  box-shadow: $bs1;
-  border-radius: $br4;
+  color: var(--color5);
+  background-color: var(--color53);
+  box-shadow: var(--bs1);
+  border-radius: var(--br4);
   overflow: auto;
   h1 {
     text-align: center;
@@ -241,29 +263,30 @@ input#origin-input.controls {
   flex-direction: column;
   position: absolute;
   width: 100%;
-  max-width: $max-width;
+  max-width: var(--max-width);
   top: 0px;
   left: 0px;
   z-index: 5;
-  color: $colorA;
+  color: var(--colorA);
   //background-image: url("../photos/Model_3_Tesla_F.png");
-  background-color: $color23;
+  background-color: var(--color53);
   background-size: cover;
   background-blend-mode: multiply;
   padding: 10px;
-  border-radius: $br4;
-  box-shadow: 0 2px 6px $color17;
+  border-radius: var(--br4);
+  box-shadow: 0 2px 6px var(--color17);
   filter: hue-rotate(0deg);
   opacity: 1;
 }
 
 .controls {
-  max-width: $max-width;
+  max-width: var(--max-width);
   margin-bottom: 10px;
 }
 
 .buttonBox2,
-.buttonBox3 {
+.buttonBox3,
+.buttonBox4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -277,12 +300,16 @@ input#origin-input.controls {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.buttonBox4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 button,
 a.button {
   border-top: none;
-  border-left: 1px solid $color17;
-  border-bottom: 2px solid $color17;
-  border-right: 2px solid $color17;
+  border-left: 1px solid var(--color17);
+  border-bottom: 2px solid var(--color17);
+  border-right: 2px solid var(--color17);
   display: grid;
   place-items: center;
   width: 100%;
@@ -290,11 +317,11 @@ a.button {
   text-align: center;
   padding: 8px 4px;
   margin: 0 0 5px 0;
-  border-radius: $br4;
+  border-radius: var(--br4);
   cursor: pointer;
   transition: all 0.5s;
   &:hover {
-    color: $color18;
+    color: var(--color18);
     border-left: 1px solid transparent;
     border-bottom: 2px solid transparent;
     border-right: 2px solid transparent;
@@ -308,11 +335,11 @@ a.button {
 }
 
 #accept {
-  background-color: $color12;
-  color: $color13;
+  background-color: var(--color5);
+  color: var(--color13);
   &:hover {
-    background-color: $color17;
-    color: $color18;
+    background-color: var(--color17);
+    color: var(--color18);
   }
 }
 
@@ -323,10 +350,10 @@ a.button {
   padding: 0;
   margin: 0 0 3px 0;
   gap: 5px;
-  border: 1px solid $color17;
-  color: $colorB;
+  border: 1px solid var(--color17);
+  color: var(--colorB);
   padding: 2px 5px 2px 5px;
-  border-radius: $br4;
+  border-radius: var(--br4);
 }
 
 label {
@@ -334,7 +361,7 @@ label {
   margin: 0 8px 0 0;
   font-weight: 700;
   width: 100%;
-  color: $colorB;
+  color: var(--colorB);
 }
 
 input {
@@ -343,185 +370,23 @@ input {
   margin: 2px 0;
   padding: 6px;
   border: 0;
-  border-radius: $br4;
+  border-radius: var(--br4);
   outline: none;
-  background-color: $color25;
+  background-color: var(--color55);
   //background-color: red;
-  color: $color17;
+  color: var(--color17);
   font-weight: bold;
 }
 
 ::placeholder {
   text-align: center;
-  color: $color32;
-}
-
-#route-info {
-  position: absolute;
-  //bottom: 10px;
-  top: 2020px;
-  left: 0px;
-  background-color: $color13;
-  color: $colorB;
-  padding: 10px;
-  border-radius: $br4;
-  box-shadow: $bs1;
-  width: 100%;
-  max-width: $max-width;
-  overflow-x: auto;
-  opacity: 1;
-  transition: top 1.5s ease;
-}
-
-#route-info.show {
-  top: 0px !important;
-  //display: block;
-}
-
-#route-info table {
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 14px;
-}
-
-#route-info th,
-#route-info td {
-  text-align: left;
-  vertical-align: top;
-  text-transform: capitalize;
-  padding: 8px;
-  //
-}
-
-#route-info td.redLet::first-letter,
-#route-info td.redLet::first-letter {
-  border-radius: 50%;
-  padding: 0 4px;
-  background: $color32;
-  border: 2px solid $color32;
-  color: $color18;
-  text-align: center;
-}
-
-#route-info td.bLine {
-  border-bottom: 1px solid $color17;
-}
-
-#route-info th {
-  text-align: center;
-  background-color: $colorB;
-  color: $color13;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: $br4;
-}
-
-#stop1,
-#stop2 {
-  display: none;
-}
-
-#timingBox {
-  position: absolute;
-  display: none;
-  top: 0px;
-  left: 0px;
-  background-color: $color23;
-  padding: 10px;
-  border-radius: $br4;
-  box-shadow: $bs1;
-  width: 100%;
-  max-width: $max-width;
-  overflow-x: auto;
-  opacity: 1;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-  div.tbText {
-    position: absolute;
-    font-size: 40px;
-    color: $color4;
-    bottom: 100px;
-    text-align: center;
-  }
-}
-
-//RideDetails Form etc
-
-#timingDetails {
-  position: absolute;
-  left: 0px;
-  top: 2020px;
-  width: 100%;
-  max-width: $max-width;
-  background-color: $color13;
-  color: $colorB;
-  transition: top 1.5s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 10px;
-  border-radius: $br4;
-  box-shadow: $bs1;
-}
-
-#timingDetails label {
-  width: 100%;
-  margin-left: 10px;
-}
-
-#timingDetails textarea {
-  width: 100%;
-  height: 150px;
-  padding: 10px;
-  border: 2px solid $color25;
-  border-radius: $br4;
-  background-color: $color25;
-  color: $color17;
-  //font-size: 16px;
-  resize: none;
-}
-
-#timingDetails input#datePicker,
-#timingDetails input#timePicker {
-  width: 100%;
-  padding: 5px;
-  border: 2px solid $color25;
-  border-radius: $br4;
-  background-color: $color18;
-  color: $colorB;
-  font-weight: bold;
-  //font-size: 16px;
-}
-
-#rideDetails {
-  font-weight: bold;
-}
-
-#summary {
-  position: absolute;
-  left: 0px;
-  top: 2020px;
-  //width: 900px;
-  transition: top 1.5s ease;
-  padding: 0px;
-}
-
-div#countdown {
-  //justify-self: center;
-  position: relative;
-  bottom: 140px;
-  font-size: 72px;
-  color: $color18;
-  text-align: center;
+  color: var(--color32);
 }
 
 .mLine {
   display: flex;
   justify-content: space-around;
-  color: $colorB;
+  color: var(--colorB);
 }
 
 .pStatus {
@@ -551,29 +416,29 @@ div#countdown {
 
 #tableResult td,
 #tableResult th {
-  border: 1px solid $color25;
+  border: 1px solid var(--color55);
   padding: 8px;
   vertical-align: top;
 }
 
 #tableResult tr {
-  background-color: $color23;
+  background-color: var(--color53);
 }
 
 #tableResult tr:nth-child(even) {
-  background-color: $color10;
+  background-color: var(--color10);
 }
 
 #tableResult tr:hover {
-  background-color: $color25;
+  background-color: var(--color55);
 }
 
 #tableResult th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: $color12;
-  color: $color18;
+  background-color: var(--color5);
+  color: var(--color18);
 }
 
 .center {
@@ -593,7 +458,7 @@ h1.lower {
 
 .blurb {
   width: 100%;
-  color: $colorB;
+  color: var(--colorB);
 }
 
 .motto {
@@ -602,20 +467,20 @@ h1.lower {
 }
 
 .mottotext {
-  color: $color13;
-  background-color: $colorB;
+  color: var(--color13);
+  background-color: var(--colorB);
   text-align: center;
   padding: 4px 8px;
-  border-radius: $br4;
+  border-radius: var(--br4);
 }
 
 .dbeddel {
-  border: 2px solid $color25;
-  border-radius: $br4;
+  border: 2px solid var(--color55);
+  border-radius: var(--br4);
   &::before {
     content: "\00a0 Adjust if required \00a0";
-    background-color: $color12;
-    color: $color18;
+    background-color: var(--color5);
+    color: var(--color18);
     position: relative;
     top: -10px;
     left: 110px;
@@ -626,7 +491,7 @@ h1.lower {
   width: 100%;
   min-height: 60px;
   font-weight: bold;
-  background-color: $color25;
+  background-color: var(--color55);
 }
 
 .jrec {
@@ -636,12 +501,12 @@ h1.lower {
 
 h3.jrec {
   margin: 0 0 6px 0;
-  color: $colorB;
+  color: var(--colorB);
 }
 
 .record {
-  color: $colorB;
-  border-bottom: 2px solid $color25;
+  color: var(--colorB);
+  border-bottom: 2px solid var(--color55);
 }
 
 .rider {
@@ -652,11 +517,11 @@ h3.jrec {
 }
 
 td.element {
-  background-color: $color18;
+  background-color: var(--color18);
 }
 
 td.elementData {
-  background-color: $color18;
+  background-color: var(--color18);
   overflow-wrap: anywhere;
 }
 
@@ -667,19 +532,19 @@ td.elementData {
   font-size: 48px;
   top: 50px;
   left: -20px;
-  color: $colorA;
+  color: var(--colorA);
   letter-spacing: 6px;
   transform: rotate(-70deg);
   z-index: 2000;
 }
 
 .completed {
-  color: $color12;
+  color: var(--color5);
 }
 
 .paid {
-  color: $color13;
-  background-color: $color17;
+  color: var(--color13);
+  background-color: var(--color17);
   top: 500px;
   left: 100px;
   transform: rotate(0deg);
@@ -687,8 +552,8 @@ td.elementData {
 
 #errorMsg {
   margin: 4px auto 0 auto;
-  background-color: $color32;
-  color: $color18;
+  background-color: var(--color32);
+  color: var(--color18);
   font-weight: bold;
   border-radius: 2px;
   text-align: center;
@@ -702,8 +567,8 @@ td.elementData {
 .password {
   margin-top: 10px;
   text-align: center;
-  color: $color32;
-  background-color: $color23;
+  color: var(--color32);
+  background-color: var(--color53);
   border-radius: 4px;
 }
 
@@ -711,8 +576,8 @@ hr {
   //position: relative;
   //top: 20px;
   border: none;
-  height: 12px;
-  background: $color17;
+  height: 2px;
+  background: var(--color50);
   //margin-bottom: 50px;
 }
 
@@ -769,6 +634,9 @@ p.sessmess1 {
 }
 
 .sessionv {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   display: flex;
   width: 30%;
   flex-wrap: wrap;

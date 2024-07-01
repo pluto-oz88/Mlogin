@@ -13,45 +13,76 @@
 
 <body>
 
-  <h1>TreeTopHeights Dashboard</h1>
+  <div class="container">
 
-  <?php if (isset($_SESSION['message'])) { ?>
-    <div>
-      <p class="sessmess1"><?php echo $_SESSION['message']; ?></p>
-      <?php unset($_SESSION['message']); ?>
-    </div>
+    <?php if (isset($_SESSION['user_authenticated'])) { ?>
 
-  <?php } else { ?>
-    <div>
-      <p class="sessmess">No Messages</p>
-    </div>
-  <?php } ?>
+      <div class="logobox">
+        <div><img class="logo" src="../img/tth-logo-nb.png" alt="gdrive logo"></div>
+        <div class="logotext">
+          <h2>TreeTopHeights</h2>
+          <h2>Logged In</h2>
+        </div>
 
-  <div class="sessionv">
-    <?php
-    print_r($_SESSION);
+      </div>
+
+
+
+      <div class="users">
+        <p class="user"><?php echo $_SESSION['user_fName'] . " " . $_SESSION['user_lName']; ?></p>
+        <p class="user"><?php echo $_SESSION['user_email']; ?></p>
+        <p class="user"><?php echo $_SESSION['user_mobile']; ?></p>
+      </div>
+
+      <div class="buttonBox4">
+        <a class="button color12" href="login/change_password.php">Change password</a>
+        <a class="button color10" href="login/delete_account.php">Delete account</a>
+        <a class="button color18" href="page1.php">Continue to site</a>
+        <a class="button color32" href="login/logout.php">Logout</a>
+
+      </div>
+    <?php   } else {
+
+      // session_unset();
     ?>
+      <div class="logobox">
+        <div><img class="logo" src="../img/tth-logo-nb.png" alt="gdrive logo"></div>
+        <div class="logotext">
+          <h2>TreeTopHeights</h2>
+          <h2>Members</h2>
+        </div>
+      </div>
+      <hr>
+      <p>You will need to register if you want to take advantage of special offers available on the island including motor bike rentals, diving and snorkelling offers, restaurant deals and beach club access</p>
+      <hr>
+      <div class="buttonBox3">
+        <a class="button color12" href="login/login.php">Login</a>
+        <a class="button color32" href="login/register.php">Register</a>
+        <a class="button color10" href="../page1.php">Continue to site</a>
+      </div>
+    <?php
+    }
+    ?>
+
+    <div class="sessionv">
+      <?php
+      print_r($_SESSION);
+      ?>
+    </div>
+
+    <?php if (isset($_SESSION['message'])) { ?>
+      <div>
+        <p class="sessmess1"><?php echo $_SESSION['message']; ?></p>
+        <?php unset($_SESSION['message']); ?>
+      </div>
+
+    <?php } else { ?>
+      <div>
+        <p class="sessmess">No Messages</p>
+      </div>
+    <?php } ?>
+
   </div>
-
-  <?php if (isset($_SESSION['user_authenticated'])) { ?>
-
-    <h1>logged in</h1>
-
-    <p><a href="login/change_password.php">Change password</a></p>
-    <p><a href="login/delete_account.php">Delete account</a></p>
-    <p><a href="login/logout.php">Logout</a></p>
-  <?php   } else {
-
-  ?>
-    <p><a href="login/login.php">Login</a></p>
-    <p><a href="login/register.php">Register</a></p>
-
-  <?php
-
-  }
-  ?>
-
-
 
 
 </body>

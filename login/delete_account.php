@@ -20,11 +20,22 @@ $lastName = $_SESSION['user_lName'];
 
 <body>
     <div class="container">
+        <div class="mLine">
+            <div>
+                <?php echo $firstName . " " . $lastName; ?>
+            </div>
+            <div>
+                <?php
+                //date_default_timezone_set("Australia/Brisbane");
+                //echo date_default_timezone_get();
+                echo date('d/m/Y') . " " . date("h:i a");
+                ?></div>
+        </div>
         <div class="logobox">
-            <div><img class="logo" src="../img/GDrive_logo.png" alt="gdrive logo"></div>
+            <div><img class="logo" src="../img/tth-logo-nb.png" alt="gdrive logo"></div>
             <div class="logotext">
-                <h1 class="upper">Delete</h1>
-                <h1 class="lower">Account</h1>
+                <h2>TreeTopHeights</h2>
+                <h2>Close Account</h2>
             </div>
         </div>
 

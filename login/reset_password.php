@@ -1,4 +1,11 @@
-<?php session_start(); ?>
+<?php session_start();
+
+if (isset($_GET['token'])) {
+    $token = $_GET['token'];
+} else {
+    $token = $_SESSION['token'];
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,15 +21,15 @@
 <body>
     <div class="container">
         <div class="logobox">
-            <div><img class="logo" src="../img/GDrive_logo.png" alt="gdrive logo"></div>
+            <div><img class="logo" src="../img/tth-logo-nb.png" alt="gdrive logo"></div>
             <div class="logotext">
-                <h1 class="upper">Reset</h1>
-                <h1 class="lower">Password</h1>
+                <h2>TreeTopHeights</h2>
+                <h2>Reset Password</h2>
             </div>
         </div>
 
         <form action="reset_password_process.php" method="post">
-            <input type="hidden" name="token" value="<?php echo $_GET['token']; ?>">
+            <input type="hidden" name="token" value="<?php echo $token; ?>">
             <div class="inLine"><label for="password">Password:</label>
                 <input type="password" name="password" id="password" required>
                 <input type="checkbox" id="check"> Show
@@ -37,7 +44,7 @@
 
             <div class="buttonBox2">
                 <button class="color10" type="submit">Reset Password</button>
-                <a class="button color32" href="../index.php">Home</a>
+                <a class="button color32" href="../index.php">Back</a>
             </div>
             <?php if (isset($_SESSION['message'])) { ?>
                 <div>

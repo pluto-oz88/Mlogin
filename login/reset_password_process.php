@@ -33,6 +33,8 @@ require "db.php";
 
         $token = $_POST['token'];
 
+        $_SESSION['token'] = $token;
+
         $new_password = trim($_POST['password']);
 
         if (!isValidPassword($new_password)) {
@@ -67,16 +69,18 @@ require "db.php";
                     $stmt_delete->execute();
 
                     header("Location: ../index.php");
+                    unset($_SESSION['token']);
                     $_SESSION["message"] = "Your password has been successfully reset.";
+
                     exit();
                 } else {
                     header("Location: ../index.php");
-                    $_SESSION["message"] = "This password reset link has expired. Please request a new link.";
+                    $_SESSION["message"] = "This password reset link has expired. Please redo";
                     exit();
                 }
             } else {
                 header("Location: ../index.php");
-                $_SESSION["message"] = "Invalid password reset token.";
+                $_SESSION["message"] = "Invalid password reset token. Please redo";
                 exit();
             }
         }

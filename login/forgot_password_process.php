@@ -32,6 +32,8 @@ require "db.php";
             $row = $result->fetch_assoc();
             $user_id = $row['id'];
             $token = bin2hex(random_bytes(32));
+            $_SESSION['token'] = $token;
+
             $expires_at = date("Y-m-d H:i:s", strtotime("+1 hour"));
 
             $sql_insert = "INSERT INTO password_reset_tokens (user_id, token, expires_at) VALUES (?, ?, ?)";

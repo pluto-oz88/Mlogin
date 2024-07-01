@@ -14,13 +14,12 @@
 <body>
     <div class="container">
         <div class="logobox">
-            <div><img class="logo" src="../img/GDrive_logo.png" alt="gdrive logo"></div>
+            <div><img class="logo" src="../img/tth-logo-nb.png" alt="gdrive logo"></div>
             <div class="logotext">
-                <h1 class="upper">Register</h1>
-                <h1 class="lower">for Gdrive</h1>
+                <h2>TreeTopHeights</h2>
+                <h2>Register</h2>
             </div>
         </div>
-
         <form action="register_process.php" method="post">
             <div class="inLine"><label for="firstname">First&nbsp;Name:</label>
                 <input type="text" name="firstname" id="firstname" required>

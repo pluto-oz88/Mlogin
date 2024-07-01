@@ -23,7 +23,6 @@ require "db.php";
 
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $_SESSION['confirmed'] = 0;
 
         $sql = "SELECT * FROM users WHERE email = ? AND verified > 0 AND deleted = 0";
         $stmt = $conn->prepare($sql);
