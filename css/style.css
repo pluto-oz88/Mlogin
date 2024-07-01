@@ -4,119 +4,144 @@
 :root {
   --colorA: rgba(249, 238, 90, 1);
   --colorB: rgba(20, 37, 99, 1);
-  --color1: rgba(154, 220, 226, 0.6);
   --color2: rgba(73, 71, 71, 1);
   --color3: rgba(255, 255, 255, 1);
-  --color10: rgb(233, 94, 1);
-  --color12: rgb(44, 86, 40, 1);
   --color13: rgb(192, 153, 62);
   --color17: rgba(0, 0, 0, 1);
   --color18: rgba(255, 255, 255, 1);
   --color20: rgb(100, 78, 91);
   --color23: rgb(151, 170, 189);
-  --color25: rgba(230, 233, 240, 0.774);
-  --color32: rgb(136, 31, 41);
 }
 
 :root {
   --color1: #bddfdc;
   --color2: #ff7f50;
   --color3: #f4a460;
-  --color4: rgba(255, 255, 255, 0.5);
+  --color4: rgba(255, 255, 255, 1);
   --color5: #0f1010;
-  --color6: red;
+  --color6: rgb(233, 94, 1);
   --color7: #9e90f0;
   --color8: #ffe2d9;
   --color9: #fff4e1;
+  --color10: #fcf8f7;
+  --color11: rgb(136, 31, 41);
+  --color12: rgb(44, 86, 40, 1);
   --colora: transparent;
+  --br4: 4px;
+  --bs1: 12px 12px 20px var(--color17);
+}
+
+.color1 {
+  background-color: var(--color1);
+  color: var(--color5);
+}
+.color1:hover {
+  background-color: var(--color12);
+  color: var(--color9);
+}
+
+.color2 {
+  background-color: var(--color2);
+  color: var(--color5);
+}
+.color2:hover {
+  background-color: var(--color12);
+  color: var(--color9);
+}
+
+.color3 {
+  background-color: var(--color3);
+  color: var(--color5);
+}
+.color3:hover {
+  background-color: var(--color12);
+  color: var(--color9);
+}
+
+.color4 {
+  background-color: var(--color4);
+  color: var(--color5);
+}
+.color4:hover {
+  background-color: var(--color12);
+  color: var(--color9);
+}
+
+.color5 {
+  background-color: var(--color6);
+  color: var(--color18);
+}
+.color5:hover {
+  background-color: var(--color12);
+  color: var(--color9);
+}
+
+.color6 {
+  background-color: var(--color7);
+  color: var(--colorB);
+}
+.color6:hover {
+  background-color: var(--color12);
+  color: var(--color9);
+}
+
+.color7 {
+  background-color: var(--color8);
+  color: var(--colorB);
+}
+.color7:hover {
+  background-color: var(--color12);
+  color: var(--color9);
+}
+
+.color8 {
+  background-color: var(--color9);
+  color: var(--color5);
+}
+.color8:hover {
+  background-color: var(--color12);
+  color: var(--color9);
+}
+
+.color9 {
+  background-color: var(--color10);
+  color: var(--color5);
+}
+.color9:hover {
+  background-color: var(--color12);
+  color: var(--color9);
+}
+
+.color10 {
+  background-color: var(--color11);
+  color: var(--color4);
+}
+.color10:hover {
+  background-color: var(--color12);
+  color: var(--color9);
+}
+
+.color11 {
+  background-color: var(--color12);
+  color: var(--color4);
+}
+.color11:hover {
+  background-color: var(--color12);
+  color: var(--color9);
+}
+
+.color12 {
+  background-color: var(--color5);
+  color: var(--color4);
+}
+.color12:hover {
+  background-color: var(--color12);
+  color: var(--color9);
 }
 
 :root {
   --max-width: 390px;
   --min-width: 320px;
-  --br4: 4px;
-  --bs1: 12px 12px 20px var(--color17);
-}
-
-.colorB {
-  background-color: var(--colorB);
-  color: var(--color18);
-}
-.colorB:hover {
-  background-color: var(--color17);
-  color: var(--color18);
-}
-
-.color10 {
-  background-color: var(--color10);
-  color: var(--color18);
-}
-.color10:hover {
-  background-color: var(--color17);
-  color: var(--color18);
-}
-
-.color5 {
-  background-color: var(--color5);
-  color: var(--color18);
-}
-.color5:hover {
-  background-color: var(--color17);
-  color: var(--color18);
-}
-
-.color13 {
-  background-color: var(--color13);
-  color: var(--color18);
-}
-.color13:hover {
-  background-color: var(--color17);
-  color: var(--color18);
-}
-
-.color17 {
-  background-color: var(--color17);
-  color: var(--color18);
-}
-.color17:hover {
-  background-color: var(--color17);
-  color: var(--color18);
-}
-
-.color18 {
-  background-color: var(--color18);
-  color: var(--colorB);
-}
-.color18:hover {
-  background-color: var(--color17);
-  color: var(--color18);
-}
-
-.color53 {
-  background-color: var(--color53);
-  color: var(--colorB);
-}
-.color53:hover {
-  background-color: var(--color17);
-  color: var(--color18);
-}
-
-.color55 {
-  background-color: var(--color55);
-  color: var(--colorB);
-}
-.color55:hover {
-  background-color: var(--color17);
-  color: var(--color18);
-}
-
-.color32 {
-  background-color: var(--color32);
-  color: var(--color18);
-}
-.color32:hover {
-  background-color: var(--color17);
-  color: var(--color18);
 }
 
 html,
@@ -129,23 +154,6 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.col2 {
-  width: 100%;
-  max-width: var(--max-width);
-  min-width: var(--min-width);
-  position: fixed;
-  left: var(--max-width)16px;
-  background-color: var(--color13);
-  top: 0;
-  padding: 10px;
-  border-radius: var(--br4);
-  -webkit-box-shadow: var(--bs1);
-          box-shadow: var(--bs1);
-}
-.col2 h4 {
-  text-align: center;
 }
 
 h1 {
@@ -171,11 +179,6 @@ a:hover {
 }
 a:active {
   text-decoration: none;
-}
-
-.fullPage {
-  position: relative;
-  overflow: hidden;
 }
 
 .logobox {
@@ -234,47 +237,6 @@ p.user {
   margin: 4px 0;
 }
 
-#echobeach {
-  position: absolute;
-  width: 100%;
-  max-width: var(--max-width);
-  min-width: var(--min-width);
-  top: 0px;
-  right: 0px;
-  margin: 10px;
-  color: red;
-  font-weight: bold;
-  border: 1px solid #ccc;
-  padding: 10px;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-#echobeach img {
-  width: 100%;
-  height: auto;
-}
-#echobeach p {
-  font-weight: bold;
-  font-size: 35px;
-  margin: 4px;
-}
-
-#map {
-  position: fixed;
-  height: 100%;
-}
-
-#select {
-  text-align: center;
-  font-size: 14px;
-  color: var(--colorB);
-  margin-top: 2px;
-}
-
-input#origin-input.controls {
-  margin-bottom: 2px;
-}
-
 .container {
   width: 100%;
   max-width: var(--max-width);
@@ -282,7 +244,7 @@ input#origin-input.controls {
   margin: 0;
   padding: 10px;
   color: var(--color5);
-  background-color: var(--color53);
+  background-color: var(--color8);
   -webkit-box-shadow: var(--bs1);
           box-shadow: var(--bs1);
   border-radius: var(--br4);
@@ -290,47 +252,6 @@ input#origin-input.controls {
 }
 .container h1 {
   text-align: center;
-}
-
-.tesla {
-  opacity: 0.05;
-  position: absolute;
-  left: 0;
-  top: 10px;
-  width: 100%;
-  height: auto;
-}
-
-#input-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  width: 100%;
-  max-width: var(--max-width);
-  top: 0px;
-  left: 0px;
-  z-index: 5;
-  color: var(--colorA);
-  background-color: var(--color53);
-  background-size: cover;
-  background-blend-mode: multiply;
-  padding: 10px;
-  border-radius: var(--br4);
-  -webkit-box-shadow: 0 2px 6px var(--color17);
-          box-shadow: 0 2px 6px var(--color17);
-  -webkit-filter: hue-rotate(0deg);
-          filter: hue-rotate(0deg);
-  opacity: 1;
-}
-
-.controls {
-  max-width: var(--max-width);
-  margin-bottom: 10px;
 }
 
 .buttonBox2,
@@ -446,8 +367,8 @@ input {
   border: 0;
   border-radius: var(--br4);
   outline: none;
-  background-color: var(--color55);
-  color: var(--color17);
+  background-color: var(--color10);
+  color: var(--color5);
   font-weight: bold;
 }
 
@@ -506,41 +427,6 @@ input {
   margin: 0 0 0 5px;
 }
 
-#tableResult {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  table-layout: fixed;
-  width: 100%;
-  max-width: 700px;
-}
-
-#tableResult td,
-#tableResult th {
-  border: 1px solid var(--color55);
-  padding: 8px;
-  vertical-align: top;
-}
-
-#tableResult tr {
-  background-color: var(--color53);
-}
-
-#tableResult tr:nth-child(even) {
-  background-color: var(--color10);
-}
-
-#tableResult tr:hover {
-  background-color: var(--color55);
-}
-
-#tableResult th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: var(--color5);
-  color: var(--color18);
-}
-
 .center {
   text-align: center;
   margin: 20px 0 4px 0;
@@ -554,27 +440,6 @@ h1.upper {
 h1.lower {
   position: relative;
   bottom: -5px;
-}
-
-.blurb {
-  width: 100%;
-  color: var(--colorB);
-}
-
-.motto {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.mottotext {
-  color: var(--color13);
-  background-color: var(--colorB);
-  text-align: center;
-  padding: 4px 8px;
-  border-radius: var(--br4);
 }
 
 .dbeddel {
@@ -617,73 +482,11 @@ h3.jrec {
   border-bottom: 2px solid var(--color55);
 }
 
-.rider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 10px 0;
-}
-
-td.element {
-  background-color: var(--color18);
-}
-
-td.elementData {
-  background-color: var(--color18);
-  overflow-wrap: anywhere;
-}
-
-.cancelled,
-.completed,
-.paid {
-  position: absolute;
-  font-size: 48px;
-  top: 50px;
-  left: -20px;
-  color: var(--colorA);
-  letter-spacing: 6px;
-  -webkit-transform: rotate(-70deg);
-          transform: rotate(-70deg);
-  z-index: 2000;
-}
-
-.completed {
-  color: var(--color5);
-}
-
-.paid {
-  color: var(--color13);
-  background-color: var(--color17);
-  top: 500px;
-  left: 100px;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-#errorMsg {
-  margin: 4px auto 0 auto;
-  background-color: var(--color32);
-  color: var(--color18);
-  font-weight: bold;
-  border-radius: 2px;
-  text-align: center;
-}
-
-.spacer {
-  width: 100%;
-  height: 50px;
-}
-
 .password {
   margin-top: 10px;
   text-align: center;
-  color: var(--color32);
-  background-color: var(--color53);
+  color: var(--color5);
+  background-color: var(--color1);
   border-radius: 4px;
 }
 
@@ -691,38 +494,6 @@ hr {
   border: none;
   height: 2px;
   background: var(--color50);
-}
-
-.filters {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 5px 6fr;
-  grid-template-columns: 2fr 6fr;
-  -ms-grid-rows: 1fr;
-  grid-template-rows: 1fr;
-  gap: 5px;
-}
-
-.filters > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.filters > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-.filters label[for=driver] {
-  margin-left: 20px;
-}
-.filters label[for=rider] {
-  margin-left: 22px;
-}
-
-select[id=driver],
-select[id=rider] {
-  display: inline-block;
-  width: 100%;
 }
 
 input#currentd {

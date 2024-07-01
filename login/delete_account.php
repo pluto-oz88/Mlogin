@@ -49,8 +49,8 @@ $lastName = $_SESSION['user_lName'];
                 <input type="password" name="password" id="password" required>
             </div>
             <div class="buttonBox2">
-                <button class="color12" type="submit">Delete Account</button>
-                <a class="button color32" href="../index.php">Back</a>
+                <button class="color2" type="submit">Delete Account</button>
+                <a class="button color4" href="../index.php">Back</a>
             </div>
             <?php if (isset($_SESSION['message'])) { ?>
                 <div>

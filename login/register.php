@@ -49,8 +49,8 @@
                 8 characters minimum. 1 UPPER CASE, 1 lower case, 1 Number and 1&nbsp;Punctuation. Example ( Axbx3x?x )
             </div>
             <div class="buttonBox2">
-                <button class="color12" type="submit">Register</button>
-                <a class="button color32" href="../index.php">Back</a>
+                <button class="button color4" type="submit">Register</button>
+                <a class="button color3" href="../index.php">Back</a>
             </div>
             <?php if (isset($_SESSION['message'])) { ?>
                 <div>

@@ -27,8 +27,8 @@
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="buttonBox2">
-                <button class="color12" type="submit">Send Password<br>Reset Link</button>
-                <a class="button color32" href="login.php">Back</a>
+                <button class="color1" type="submit">Send Password<br>Reset Link</button>
+                <a class="button color3" href="login.php">Back</a>
             </div>
             <?php if (isset($_SESSION['message'])) { ?>
                 <div>

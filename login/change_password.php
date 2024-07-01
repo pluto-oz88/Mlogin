@@ -57,8 +57,8 @@ $lastName = $_SESSION['user_lName'];
                 8 characters minimum. 1 UPPER CASE, 1 lower case, 1 Number and 1&nbsp;Punctuation. Example ( Axbx3x?x )
             </div>
             <div class="buttonBox2">
-                <button class="button color12" type="submit">Change Password</button>
-                <a class="button color32" href="../index.php">Back</a>
+                <button class="button color1" type="submit">Change Password</button>
+                <a class="button color4" href="../index.php">Back</a>
             </div>
             <?php if (isset($_SESSION['message'])) { ?>
                 <div>

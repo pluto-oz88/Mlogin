@@ -35,10 +35,10 @@
       </div>
 
       <div class="buttonBox4">
-        <a class="button color12" href="login/change_password.php">Change password</a>
-        <a class="button color10" href="login/delete_account.php">Delete account</a>
-        <a class="button color18" href="page1.php">Continue to site</a>
-        <a class="button color32" href="login/logout.php">Logout</a>
+        <a class="button color1" href="login/change_password.php">Change password</a>
+        <a class="button color4" href="login/delete_account.php">Delete account</a>
+        <a class="button color3" href="page1.php">Continue to site</a>
+        <a class="button color2" href="login/logout.php">Logout</a>
 
       </div>
     <?php   } else {
@@ -56,9 +56,9 @@
       <p>You will need to register if you want to take advantage of special offers available on the island including motor bike rentals, diving and snorkelling offers, restaurant deals and beach club access</p>
       <hr>
       <div class="buttonBox3">
-        <a class="button color12" href="login/login.php">Login</a>
-        <a class="button color32" href="login/register.php">Register</a>
-        <a class="button color10" href="../page1.php">Continue to site</a>
+        <a class="button color1" href="login/login.php">Login</a>
+        <a class="button color4" href="login/register.php">Register</a>
+        <a class="button color3" href="../page1.php">Continue to site</a>
       </div>
     <?php
     }
