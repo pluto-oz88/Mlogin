@@ -8,7 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Mlogin</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link rel="stylesheet" href="css/login.css" />
 </head>
 
 <body>
@@ -23,10 +24,7 @@
           <h2>TreeTopHeights</h2>
           <h2>Logged In</h2>
         </div>
-
       </div>
-
-
 
       <div class="users">
         <p class="user"><?php echo $_SESSION['user_fName'] . " " . $_SESSION['user_lName']; ?></p>
@@ -53,7 +51,7 @@
         </div>
       </div>
       <hr>
-      <p>You will need to register if you want to take advantage of special offers available on the island including motor bike rentals, diving and snorkelling offers, restaurant deals and beach club access</p>
+      <p>You will need to register if you want to take advantage of our special offers available on the island including motor bike rentals, diving and snorkelling offers, restaurant deals and beach club access</p>
       <hr>
       <div class="buttonBox3">
         <a class="button color1" href="login/login.php">Login</a>
@@ -66,7 +64,8 @@
 
     <div class="sessionv">
       <?php
-      print_r($_SESSION);
+      $printR = print_r($_SESSION, true);
+      echo str_replace('[', '<br>[', $printR);
       ?>
     </div>
 

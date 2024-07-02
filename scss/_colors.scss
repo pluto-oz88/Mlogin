@@ -21,7 +21,7 @@
     --color3: #f4a460; // - Mimics the beach sand.
     --color4: rgba(255, 255, 255, 1); // - Clean and easy on the eyes.
     --color5: #0f1010; // - Provides good contrast against lighter backgrounds.
-    --color6: rgb(233, 94, 1);
+    --color6: #e95e01;
     --color7: #9e90f0; // - Provides good contrast against lighter backgrounds.
     --color8: #ffe2d9;
     --color9: #fff4e1;
@@ -34,6 +34,8 @@
     --br4: 4px; //Border radius
     --bs1: 12px 12px 20px var(--color17); //Border shadow
 }
+
+$br4: var(--br4);
 
 //Container styles
 $cont-bg-col: var(--color8);
@@ -172,5 +174,5 @@ $user-bg: var(--color13);
 $user-border: thick double var(--color10);
 
 // Session Messages
-$sess-mess-bg: var(--color6);
-$sess-mess-tx: var(--color12);
+$sess-mess-bg: var(--color11);
+$sess-mess-tx: var(--color4);

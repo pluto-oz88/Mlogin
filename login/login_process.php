@@ -13,7 +13,7 @@ require "db.php";
 
     <title>GDrive Login</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/login.css">
 </head>
 
 <body>

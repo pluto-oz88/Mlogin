@@ -15,7 +15,7 @@ $lastName = $_SESSION['user_lName'];
 
     <title>GDrive Del</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>

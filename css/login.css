@@ -18,7 +18,7 @@
   --color3: #f4a460;
   --color4: rgba(255, 255, 255, 1);
   --color5: #0f1010;
-  --color6: rgb(233, 94, 1);
+  --color6: #e95e01;
   --color7: #9e90f0;
   --color8: #ffe2d9;
   --color9: #fff4e1;
@@ -451,7 +451,7 @@ h1.lower {
   text-align: center;
   color: var(--color5);
   background-color: var(--color1);
-  border-radius: 4px;
+  border-radius: var(--br4);
 }
 
 hr {
@@ -487,25 +487,24 @@ p.sessmess1 {
   width: 100%;
   display: block;
   text-align: center;
-  background-color: var(--color6);
+  background-color: var(--color11);
   border-radius: 2px;
-  color: var(--color12);
+  color: var(--color4);
   padding: 3px;
   margin: 0;
 }
 
 .sessionv {
   position: absolute;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 30%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   background-color: rgb(19, 43, 37);
   color: white;
   padding: 3px;
   border: 2px solid rgb(227, 210, 210);
+  border-radius: 10px;
 }
