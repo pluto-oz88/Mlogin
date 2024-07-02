@@ -49,7 +49,7 @@ $lastName = $_SESSION['user_lName'];
                 <input type="password" name="new_password" id="new_password" required>
                 <input type="checkbox" id="check"> Show
             </div>
-            <div class="inLine"><label for="password2">C'firm New Password:</label>
+            <div class="inLine"><label for="password2">Confirm New Password:</label>
                 <input type="password" name="password2" id="password2" required>
                 <input type="checkbox" id="confirm_check"> Show
             </div>
