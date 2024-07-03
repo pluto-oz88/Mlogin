@@ -325,15 +325,6 @@ a.button:active {
           box-shadow: 0 5px #666;
 }
 
-#accept {
-  background-color: var(--color5);
-  color: var(--color13);
-}
-#accept:hover {
-  background-color: var(--color17);
-  color: var(--color18);
-}
-
 .inLine {
   width: 100%;
   display: -ms-grid;

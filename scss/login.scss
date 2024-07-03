@@ -2,7 +2,7 @@
 @import "colors";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;0,800;0,900;1,100;1,600&display=swap");
 
-//DIMENSIONS
+//!DIMENSIONS
 
 :root {
     --max-width: 390px;
@@ -21,7 +21,7 @@ body {
 }
 
 h1 {
-    //font-size: 1.9rem;
+    //? font-size: 1.9rem;
     font-size: 2.5em;
 }
 
@@ -154,14 +154,14 @@ a.button {
     }
 }
 
-#accept {
-    background-color: var(--color5);
-    color: var(--color13);
-    &:hover {
-        background-color: var(--color17);
-        color: var(--color18);
-    }
-}
+// #accept {
+//     background-color: var(--color5);
+//     color: var(--color13);
+//     &:hover {
+//         background-color: var(--color17);
+//         color: var(--color18);
+//     }
+// }
 
 .inLine {
     width: 100%;
