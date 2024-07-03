@@ -37,7 +37,7 @@
                 $stmt_delete->execute();
 
                 echo "Account closed...";
-                header("Location: ../index.php");
+                header("Location: ../logreg.php");
                 session_unset();
                 $_SESSION["message"] = "Account deleted";
                 exit();

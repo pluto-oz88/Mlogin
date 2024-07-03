@@ -137,7 +137,7 @@ require "db.php";
                 echo "<br>" . $error2;
 
 
-                header("Location: ../index.php");
+                header("Location: ../logreg.php");
                 $_SESSION["message"] = "Verification Sent. Please check your email. <br>Status: Awaiting confirmation";
                 exit();
             }

@@ -29,7 +29,7 @@
             </div>
             <div class="buttonBox3">
                 <button class="color2" type="submit">Login</button>
-                <a class="button color1" href="../index.php">Back</a>
+                <a class="button color1" href="../logreg.php">Back</a>
                 <a class="button color4" href="forgot_password.php">Forgotten Password</a>
             </div>
             <?php if (isset($_SESSION['message'])) { ?>

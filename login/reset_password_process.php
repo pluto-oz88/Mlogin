@@ -68,18 +68,18 @@ require "db.php";
                     $stmt_delete->bind_param("s", $token);
                     $stmt_delete->execute();
 
-                    header("Location: ../index.php");
+                    header("Location: ../logreg.php");
                     unset($_SESSION['token']);
                     $_SESSION["message"] = "Your password has been successfully reset.";
 
                     exit();
                 } else {
-                    header("Location: ../index.php");
+                    header("Location: ../logreg.php");
                     $_SESSION["message"] = "This password reset link has expired. Please redo";
                     exit();
                 }
             } else {
-                header("Location: ../index.php");
+                header("Location: ../logreg.php");
                 $_SESSION["message"] = "Invalid password reset token. Please redo";
                 exit();
             }

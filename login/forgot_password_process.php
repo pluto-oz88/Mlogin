@@ -56,7 +56,7 @@ require "db.php";
             echo "<br>" . $error2;
 
 
-            header("Location: ../index.php");
+            header("Location: ../logreg.php");
             $_SESSION["message"] = "Reset verification sent. Awaiting confirmation.";
             exit();
         } else {

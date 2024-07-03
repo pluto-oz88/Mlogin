@@ -44,7 +44,7 @@ if (isset($_GET['token'])) {
 
             <div class="buttonBox2">
                 <button class="color1" type="submit">Reset Password</button>
-                <a class="button color3" href="../index.php">Back</a>
+                <a class="button color3" href="../logreg.php">Back</a>
             </div>
             <?php if (isset($_SESSION['message'])) { ?>
                 <div>

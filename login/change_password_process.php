@@ -56,7 +56,7 @@ require "db.php";
                     $stmt_update->bind_param("ss", $new_password, $email);
                     $stmt_update->execute();
 
-                    header("Location: ../index.php");
+                    header("Location: ../logreg.php");
                     $_SESSION["message"] = "Password successfully changed...";
                     exit();
                 } else {

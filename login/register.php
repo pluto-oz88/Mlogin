@@ -50,7 +50,7 @@
             </div>
             <div class="buttonBox2">
                 <button class="button color4" type="submit">Register</button>
-                <a class="button color3" href="../index.php">Back</a>
+                <a class="button color3" href="../logreg.php">Back</a>
             </div>
             <?php if (isset($_SESSION['message'])) { ?>
                 <div>

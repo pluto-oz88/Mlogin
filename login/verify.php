@@ -36,21 +36,21 @@ require "db.php";
                     $stmt_update->execute();
                     // echo "Your email address has been verified. <a class="button" href='login.php'>Login</a>.";
 
-                    header("Location: ../index.php");
+                    header("Location: ../logreg.php");
                     $_SESSION["message"] = "Your email has been verified...";
                     exit();
                 } else {
-                    header("Location: ../index.php");
+                    header("Location: ../logreg.php");
                     $_SESSION["message"] = "Your email is already verified...";
                     exit();
                 }
             } else {
-                header("Location: ../index.php");
+                header("Location: ../logreg.php");
                 $_SESSION["message"] = "Invalid token. Your email cannot be verified.";
                 exit();
             }
         } else {
-            header("Location: ../index.php");
+            header("Location: ../logreg.php");
             $_SESSION["message"] = "Token not found. Your email cannot be verified.";
             exit();
         }

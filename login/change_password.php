@@ -58,7 +58,7 @@ $lastName = $_SESSION['user_lName'];
             </div>
             <div class="buttonBox2">
                 <button class="button color1" type="submit">Change Password</button>
-                <a class="button color4" href="../index.php">Back</a>
+                <a class="button color4" href="../logreg.php">Back</a>
             </div>
             <?php if (isset($_SESSION['message'])) { ?>
                 <div>

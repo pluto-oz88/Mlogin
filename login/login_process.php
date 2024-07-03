@@ -46,7 +46,7 @@ require "db.php";
                 $stmt_update->bind_param("s", $email);
                 $stmt_update->execute();
 
-                header("Location: ../index.php");
+                header("Location: ../logreg.php");
                 $_SESSION["message"] = "Successfully logged in";
                 exit();
             } else {
