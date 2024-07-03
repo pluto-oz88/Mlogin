@@ -4,27 +4,167 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colors</title>
-    <link rel="stylesheet" href="css/login.css" />
+    <style>
+      :root {
+        /* COLOURS CORP */
+
+        --colorA: rgba(249, 238, 90, 1);
+        --colorB: rgba(20, 37, 99, 1);
+        --color17: rgba(0, 0, 0, 1);
+        --color18: rgba(255, 255, 255, 1);
+        --color20: rgb(100, 78, 91);
+        --color23: rgb(151, 170, 189);
+      }
+
+      :root {
+        --color1: #bddfdc;
+        --color2: #ff7f50;
+        --color3: #f4a460;
+        --color4: rgba(255, 255, 255, 1);
+        --color5: #0f1010;
+        --color6: #e95e01;
+        --color7: #9e90f0;
+        --color8: #ffe2d9;
+        --color9: #fff4e1;
+        --color10: rgb(252, 248, 247);
+        --color11: rgb(136, 31, 41);
+        --color12: rgb(44, 86, 40, 1);
+        --color13: #e1c6be;
+        --colora: transparent;
+      }
+
+      .container {
+        width: 50%;
+        background-color: var(--color3);
+        padding: 10px;
+      }
+
+      a:link {
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:active {
+        text-decoration: none;
+      }
+
+      .color1 {
+        background-color: var(--color1);
+        color: var(--color5);
+      }
+
+      .color2 {
+        background-color: var(--color2);
+        color: var(--color5);
+      }
+
+      .color3 {
+        background-color: var(--color3);
+        color: var(--color5);
+      }
+
+      .color4 {
+        background-color: var(--color4);
+        color: var(--color5);
+      }
+
+      .color5 {
+        background-color: var(--color6);
+        color: var(--color18);
+      }
+
+      .color6 {
+        background-color: var(--color7);
+        color: var(--colorB);
+      }
+
+      .color7 {
+        background-color: var(--color8);
+        color: var(--colorB);
+      }
+
+      .color8 {
+        background-color: var(--color9);
+        color: var(--color5);
+      }
+
+      .color9 {
+        background-color: var(--color10);
+        color: var(--color5);
+      }
+
+      .color10 {
+        background-color: var(--color11);
+        color: var(--color4);
+      }
+
+      .color11 {
+        background-color: var(--color12);
+        color: var(--color4);
+      }
+
+      .color12 {
+        background-color: var(--color5);
+        color: var(--color4);
+      }
+
+      button:hover,
+      a.button:hover {
+        background-color: var(--color12);
+        color: var(--color9);
+      }
+
+      button,
+      a.button {
+        border-top: none;
+        border-left: var(--color5);
+        border-bottom: var(--color5);
+        border-right: var(--color5);
+        display: grid;
+        place-items: center;
+        width: 100%;
+        font-weight: 700;
+        text-align: center;
+        padding: 30px 0;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+
+      .buttonBox4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 5px;
+        width: 100%;
+        justify-content: space-around;
+        margin: 10px 0 10px 0;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="buttonBox4">
-        <button class="button color1" type="submit">Change Password</button>
-        <a class="button color2" href="../index.php">Back</a>
-        <button class="button color3" type="submit">Change Password</button>
-        <a class="button color4" href="../index.php">Back</a>
+        <button class="color1">1 Password</button>
+        <a class="button color2">2 Back</a>
+        <button class="color3">3 Password</button>
+        <a class="button color4" href="../index.php">4 Back</a>
       </div>
       <div class="buttonBox4">
-        <button class="button color5" type="submit">Change Password</button>
-        <a class="button color6" href="../index.php">Back</a>
-        <button class="button color7" type="submit">Change Password</button>
-        <a class="button color8" href="../index.php">Back</a>
+        <button class="button color5" type="submit">5 Password</button>
+        <a class="button color6" href="../index.php">6 Back</a>
+        <button class="button color7" type="submit">7 Password</button>
+        <a class="button color8" href="../index.php">8 Back</a>
       </div>
       <div class="buttonBox4">
-        <button class="button color9" type="submit">Change Password</button>
-        <a class="button color10" href="../index.php">Back</a>
-        <button class="button color11" type="submit">Change Password</button>
-        <a class="button color12" href="../index.php">Back</a>
+        <button class="button color9" type="submit">9 Password</button>
+        <a class="button color10" href="../index.php">10 Back</a>
+        <button class="button color11" type="submit">11 Password</button>
+        <a class="button color12" href="../index.php">12 Back</a>
       </div>
     </div>
   </body>
